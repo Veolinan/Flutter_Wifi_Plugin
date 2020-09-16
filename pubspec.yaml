@@ -1,0 +1,28 @@
+name: wifi_config
+description: A new wifi configuration plugin.
+version: 0.0.1
+author: Eduardo Folly <edufolly@gmail.com>
+homepage: https://github.com/edufolly
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # https://pub.dev/packages/permission_handler
+  permission_handler: 5.0.1+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.github.edufolly.wifi_config
+        pluginClass: WifiConfigPlugin
+#      ios:
+#        pluginClass: WifiConfigPlugin
